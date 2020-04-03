@@ -64,8 +64,8 @@ if vimwiki#vars#get_wikilocal('syntax') ==? 'markdown'
   let s:insert_mode_title_format = "``l"
   let s:grep_link_pattern = "/(%s)/"
 else
-  let s:link_format = "[[%link|%title]]"
-  let s:link_stub = "[[%link|%title]]"
+  let s:link_format = "[[%link]]"
+  let s:link_stub = "[[%link]]"
   let s:header_format = "%%%s %s"
   let s:header_delimiter = ""
   let s:insert_mode_title_format = "h"
