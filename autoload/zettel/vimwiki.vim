@@ -57,8 +57,8 @@ let s:test_header_end = function(vimwiki#vars#get_wikilocal('syntax') ==? 'markd
 
 " variables that depend on the wiki syntax
 if vimwiki#vars#get_wikilocal('syntax') ==? 'markdown'
-  let s:link_format = "[%title](%link)"
-  let s:link_stub =  "[%title](%link)"
+  let s:link_format = "[[%link]]"
+  let s:link_stub =  "[[%link]]"
   let s:header_format = "%s: %s"
   let s:header_delimiter = "---"
   let s:insert_mode_title_format = "``l"
